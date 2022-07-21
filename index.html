@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-Commerce || Landing Page</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="./fontawesome/css/all.css">
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  
+  <header>
+     <!-- NAV BAR -->
+    <section class="nav-container">
+      <nav class="main-nav">
+
+        <div id="navImg">
+          <img src="./images/icon-menu.svg" alt="" id="navToggle" >
+          <img src="./images/logo.svg" alt="logo image" class="logo">
+        </div>
+    
+        <div class="nav-links">
+          
+          <ul class="nav-menu nav-left" id="navLeft">
+            <li>
+              <i class="fa-solid fa-xmark" id="closeNav-btn"></i>
+            </li>
+            <li><a href="#">Collection</a></li>
+            <li><a href="#">Men</a></li>
+            <li><a href="#">Women</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+      
+          <div class="nav-menu nav-right">
+            <a href="#" class="cart-link">
+              <i class="fa-solid fa-cart-shopping" id="cartToggle"></i>
+              <!-- <span class="cart-item-list">
+                0
+              </span> -->
+            </a>
+            <div class="user-avatar">
+               <img src="./images/image-avatar.png" alt="user image"  class="profile-image">
+            </div>
+            
+          </div>
+        </div>
+
+      </nav>
+      <hr>
+    </section>
+
+    <!-- Cart Content -->
+
+    <section class="cart-content-container">
+      <div class="cart-content" id="cart">
+
+        <h3>Cart</h3>
+        <hr>
+
+        <div class="content-container">
+          <!-- Cart Content Empty -->
+
+          <div class="cart-empty">
+            <p>Your cart is empty</p>
+
+          </div>
+
+          <!-- Cart Content Filled-->
+
+          <!-- <div class="cart-filled">
+            <div class="cart-info">
+              <div class="cart-item-img">
+              <img src="./images/image-product-1.jpg" alt="" class="cart-img" width="45px">
+              </div>
+  
+            <div class="price-info">
+              <h4 class="cart-item-title">
+                Fall Limited Edition Sneakers
+              </h4>
+              
+              <div>
+                <span class="price">$125.00</span>
+                <span class="multiply">x</span>
+                <span class="quantity">3</span>
+                <span class="total-price"> $375.00</span>
+              </div>
+            </div>
+  
+            <div class="cart-delete-btn" data->
+              <i class="fa-solid fa-trash-can"></i>
+            </div>
+              
+          </div>
+  
+          <div class="btn-container" id="btn">
+            <button class="btn">
+              Checkout
+            </button>
+          </div>
+          </div> -->
+        </div>
+
+        
+
+        
+
+      </div>
+   </section>
+</header>
+
+ <!-- - - - - Product Section - - - - -->
+    
+ <section class="container">
+   <div class="row">
+       <div class="col-1">
+         <!-- - - - - Desktop slide - - - - -->
+         <div class="desktop-slide">
+
+           <div id="toggleImg" data-src = "images/image-product-1.jpg">
+             <img src="./images/image-product-1.jpg" alt="Product Image" class="desktop-active-img">
+           </div>
+
+           <div class="desktop-thumbnails thumbnails">
+
+             <div class="desktop-thumb desktop-active-thumb thumb" data-src = "images/image-product-1.jpg">
+               <img src="./images/image-product-1.jpg" alt="">
+             </div>
+ 
+             <div class="desktop-thumb thumb" data-src= "images/image-product-2.jpg">
+               <img src="./images/image-product-2.jpg" alt="">
+             </div>
+ 
+             <div class="desktop-thumb thumb" data-src= "images/image-product-3.jpg">
+               <img src="./images/image-product-3.jpg" alt="" width="100%" class="small-img">
+             </div>
+ 
+             <div class="desktop-thumb thumb" data-src= "images/image-product-4.jpg">
+               <img src="./images/image-product-4.jpg" alt="" width="100%" class="small-img">
+             </div>
+ 
+           </div>
+         </div>
+
+         <!-- - - - - Mobile Slide - - - - -->
+
+         <section class="mobile-slide">
+           <div class="mobile-slide-show">
+           
+             <div class="row">
+               <div class="col-1">
+             
+                 <div class="first-div">
+                   <div class="slide-container mobile-slide-thumbnails">
+                     
+                     <div class="mobile-thumb">   
+                       <img src="./images/image-product-1.jpg" alt="" class="mobile-active-img"> 
+                     </div>
+             
+                     <!-- <div class="mobile-thumb thumb">    
+                       <img src="./images/image-product-2.jpg" alt="">   
+                     </div>
+             
+                     <div class="mobile-thumb thumb">
+                       <img src="./images/image-product-3.jpg" alt="">
+                     </div>
+             
+                     <div class="mobile-thumb thumb">
+                       <img src="./images/image-product-4.jpg" alt="">
+                     </div> -->
+                       
+                     <div class="mobile-slide-control">
+                       <span class="prev mobile-prev">
+                             &#x3c;
+                       </span>
+                   
+                       <span class="next mobile-next">
+                           &#x3e;
+                       </span>
+                     </div>
+                   </div>
+                    
+                 </div>
+         
+               </div>
+             </div>
+           </div>
+         </section>
+         
+       </div>
+
+       <!-- - - - - Add to cart section COLUMNN 2 - - - - -->
+ 
+       <div class="col-2">
+
+          <div class="product-info" data-id="1">
+            <p class="company-name">SNEAKER COMPANY</p>
+            <h1 class="product-title">Fall Limited Edition <br> Sneakers</h1>
+            <p class="product-note">
+              These low profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they'll withstand anything the weather can offer.
+            </p>
+            <div class="price-details">
+              <div>
+                <span class="new-price">$125.00</span>
+                <span class="discount">50%</span>
+              </div>
+              <h3 class="old-price">$250</h3>
+            </div>
+    
+            <div class="buttons">
+              <div class="product-quantity">
+                <span ><i class="fa-solid fa-minus minus-btn"></i></span>
+                <span id="count-value">
+                   <input type="text" value="0" id="product-quantity">
+                </span>
+                <span><i class="fa-solid fa-plus plus-btn"></i></span>
+              </div>
+              <button class="btn add-cart">
+                <a href="#">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </a>
+                <h3>Add to cart</h3>
+              </button>
+            </div>
+          </div>
+         
+       </div>
+     </div>
+   </section>
+   
+
+   <!-- - - - - Lightbox - - - - -->
+
+   <section class="lightbox">
+
+      <div class="lightbox-close-btn">
+         <i class="fa-solid fa-xmark close-btn"></i>
+      </div>
+
+      <div class="main-img" data-src="">
+         <img src="./images/image-product-1.jpg" alt="" class="lightbox-active-img">
+
+         <div class="lightbox-slide-control">
+            <span class="prev ctrl lightbox-prev">
+                  &#x3c;
+            </span>
+        
+            <span class="next ctrl lightbox-next">
+                &#x3e;
+            </span>
+          </div>
+
+      </div>
+
+      <div class="lightbox-thumbnails thumbnails">
+
+         <div class="lightbox-thumb lightbox-active-thumb thumb" data-src = "images/image-product-1.jpg">
+         <img src="./images/image-product-1.jpg" alt="" width="100%" class="small-img">
+         </div>
+
+         <div class="lightbox-thumb thumb" data-src = "images/image-product-2.jpg">
+         <img src="./images/image-product-2.jpg" alt=""  class="small-img">
+         </div>
+
+         <div class="lightbox-thumb thumb" data-src = "images/image-product-3.jpg">
+         <img src="./images/image-product-3.jpg" alt="" width="100%" class="small-img">
+         </div>
+
+         <div class="lightbox-thumb thumb" data-src = "images/image-product-4.jpg">
+         <img src="./images/image-product-4.jpg" alt="" width="100%" class="small-img">
+         </div>
+
+       </div>
+   </section>
+
+  <script src="./script/app.js"></script>
+</body>
+</html>
