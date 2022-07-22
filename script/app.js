@@ -246,6 +246,8 @@ function cartSpan() {
   if(productsInCart.length > 0){
     cartIcon.appendChild(cartSpan);
     cartSpan.textContent = productsInCart.length;
+    // cartSpan.textContent = countCartQuantity();
+  
   } 
 }
 
