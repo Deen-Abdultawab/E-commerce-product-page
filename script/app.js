@@ -49,11 +49,13 @@ cartToggle.addEventListener('click', () => {
 
 lightboxToggle.addEventListener('click', () => {
   lightbox.classList.add('show-lightbox');
+  lightbox.style.display = 'grid';
   addOverlay();
 })
 
 closeLightbox.addEventListener('click', () => {
   lightbox.classList.remove('show-lightbox');
+  lightbox.style.display = 'none';
   removeOverlay();
 })
 

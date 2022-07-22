@@ -235,45 +235,50 @@
    <!-- - - - - Lightbox - - - - -->
 
    <section class="lightbox">
+    <div class="lightbox-content">
 
       <div class="lightbox-close-btn">
-         <i class="fa-solid fa-xmark close-btn"></i>
+        <i class="fa-solid fa-xmark close-btn"></i>
+     </div>
+
+     <div class="main-img" data-src="">
+        <img src="./images/image-product-1.jpg" alt="" class="lightbox-active-img">
+
+        <div class="lightbox-slide-control">
+           <span class="prev ctrl lightbox-prev">
+                 &#x3c;
+           </span>
+       
+           <span class="next ctrl lightbox-next">
+               &#x3e;
+           </span>
+         </div>
+
+     </div>
+
+     <div class="lightbox-thumbnails thumbnails">
+
+        <div class="lightbox-thumb lightbox-active-thumb thumb" data-src = "images/image-product-1.jpg">
+        <img src="./images/image-product-1.jpg" alt="" width="100%" class="small-img">
+        </div>
+
+        <div class="lightbox-thumb thumb" data-src = "images/image-product-2.jpg">
+        <img src="./images/image-product-2.jpg" alt=""  class="small-img">
+        </div>
+
+        <div class="lightbox-thumb thumb" data-src = "images/image-product-3.jpg">
+        <img src="./images/image-product-3.jpg" alt="" width="100%" class="small-img">
+        </div>
+
+        <div class="lightbox-thumb thumb" data-src = "images/image-product-4.jpg">
+        <img src="./images/image-product-4.jpg" alt="" width="100%" class="small-img">
+        </div>
+
       </div>
 
-      <div class="main-img" data-src="">
-         <img src="./images/image-product-1.jpg" alt="" class="lightbox-active-img">
+    </div>
 
-         <div class="lightbox-slide-control">
-            <span class="prev ctrl lightbox-prev">
-                  &#x3c;
-            </span>
-        
-            <span class="next ctrl lightbox-next">
-                &#x3e;
-            </span>
-          </div>
-
-      </div>
-
-      <div class="lightbox-thumbnails thumbnails">
-
-         <div class="lightbox-thumb lightbox-active-thumb thumb" data-src = "images/image-product-1.jpg">
-         <img src="./images/image-product-1.jpg" alt="" width="100%" class="small-img">
-         </div>
-
-         <div class="lightbox-thumb thumb" data-src = "images/image-product-2.jpg">
-         <img src="./images/image-product-2.jpg" alt=""  class="small-img">
-         </div>
-
-         <div class="lightbox-thumb thumb" data-src = "images/image-product-3.jpg">
-         <img src="./images/image-product-3.jpg" alt="" width="100%" class="small-img">
-         </div>
-
-         <div class="lightbox-thumb thumb" data-src = "images/image-product-4.jpg">
-         <img src="./images/image-product-4.jpg" alt="" width="100%" class="small-img">
-         </div>
-
-       </div>
+      
    </section>
 
   <script src="./script/app.js"></script>
