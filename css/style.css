@@ -59,7 +59,7 @@ header {
   padding: 30px;
   gap: 2.5rem;
   color: var(--Grayish-blue);
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 
 .overlay {
@@ -71,6 +71,10 @@ header {
   background: var(--Black-opacity);
   z-index: 99;
 
+}
+
+.logo {
+  cursor: pointer;
 }
 
 .nav-links {
@@ -237,18 +241,6 @@ header {
   color: var(--Very-dark-blue);
 }
 
-.btn {
-  background: var(--Orange);
-  width: 200px;
-  padding: 0.7rem 2rem;
-  border-color: transparent;
-  color: var(--White);
-  font-size: 0.7rem;
-  border-radius: 0.5rem;
-  transition: var(---transition);
-  cursor: pointer;
-}
-
 .btn:hover {
   opacity: 70%;
 }
@@ -285,6 +277,11 @@ header {
 
 .cart-delete-btn {
   cursor: pointer;
+  transition: var(---transition);
+}
+
+.cart-delete-btn:hover {
+  color: var(--Orange);
 }
 
 /* - - - - ADD TO CART SECTION - - - - */
@@ -396,7 +393,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 120px;
+  width: 155px;
   padding: 0.7rem 0.5rem;  
   background: var(--Light-grayish-blue);
   font-weight: bold;
@@ -417,6 +414,7 @@ header {
   transition: var(---transition);
   cursor: pointer;
   font-weight: bold;
+  padding: 0 1rem;
 }
 
 .product-quantity .fa-solid:hover {
@@ -425,8 +423,8 @@ header {
 
 .btn {
   background: var(--Orange);
-  width: 200px;
-  padding: 0.7rem 2rem;
+  width: 250px;
+  padding: 1rem 2rem;
   border-color: transparent;
   color: var(--White);
   font-size: 0.7rem;
@@ -535,6 +533,14 @@ header {
  .prev:hover, .next:hover {
     color: var(--Orange);
  }
+
+ input::-webkit-inner-spin-button, input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
 
  @media only screen and (max-width: 1050px) {
   .container {

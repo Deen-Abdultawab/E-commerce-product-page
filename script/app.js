@@ -148,8 +148,10 @@ prevBtn.addEventListener('click', () => {
 // product counter
 let initialValue = 0;
 minusBtn.addEventListener('click', () => {
-  initialValue--;
-  productQuantity.value = initialValue;
+  if(productQuantity.value > 0) {
+    initialValue--;
+    productQuantity.value = initialValue;
+  }
 })
 
 plusBtn.addEventListener('click', () => {
