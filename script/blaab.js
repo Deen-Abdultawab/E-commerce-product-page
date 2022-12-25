@@ -108,24 +108,48 @@ lightboxThumbs.forEach((thumbs) => {
 // lightbox controls 
 
 let idx = 0;
-const lightboxThumbsContainer = document.querySelector('.lightbox-thumbnails')
 nextBtn.addEventListener('click', () => {
-  const activeImage = lightboxThumbsContainer.querySelector('.lightbox-active-thumb');
-  const next = activeImage.nextElementSibling || lightboxThumbsContainer.firstElementChild;
-  activeImage.classList.remove('lightbox-active-thumb');
-  next.classList.add('lightbox-active-thumb');
-  lightboxImg.src = next.dataset.src;
+  idx++;
 
+  lightboxThumbs.map((e) => {
+    let active = e.classList;
+    if(active.contains('lightbox-active-thumb')) {
+      active.remove('lightbox-active-thumb');
+    }
+  })
+  
+  if(idx > lightboxThumbs.length - 1){
+    idx = 0;
+  }
+  let targetSrc = lightboxThumbs[idx].dataset.src;
+  lightboxImg.src = targetSrc;
+
+  if(lightboxImg.src = targetSrc){
+    lightboxThumbs[idx].classList.add('lightbox-active-thumb');
+  }
 
 })
 
 prevBtn.addEventListener('click', () => {
-  const activeImage = lightboxThumbsContainer.querySelector('.lightbox-active-thumb');
-  const prev = activeImage.previousElementSibling || lightboxThumbsContainer.lastElementChild;
-  activeImage.classList.remove('lightbox-active-thumb');
-  prev.classList.add('lightbox-active-thumb');
-  lightboxImg.src = prev.dataset.src;
+  idx--;
+
+  lightboxThumbs.map((e) => {
+    let active = e.classList;
+    if(active.contains('lightbox-active-thumb')) {
+      active.remove('lightbox-active-thumb');
+    }
+  })
   
+  if(idx < 0 ){
+    idx = lightboxThumbs.length - 1;
+  }
+
+  let targetSrc = lightboxThumbs[idx].dataset.src;
+  lightboxImg.src = targetSrc;
+
+  if(lightboxImg.src = targetSrc){
+    lightboxThumbs[idx].classList.add('lightbox-active-thumb');
+  }
 })
 
 // product counter
