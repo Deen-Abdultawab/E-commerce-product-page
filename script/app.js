@@ -22,6 +22,7 @@ let mobileNextBtn = document.querySelector('.mobile-next');
 let mobileImg = document.querySelector('.mobile-active-img');
 let parentElement = document.querySelector('.content-container');
 let addCartBtn = document.querySelector('.add-cart');
+const bodyCartToggle = document.querySelector('.product-body');
 
 
 
@@ -30,6 +31,7 @@ let addCartBtn = document.querySelector('.add-cart');
 // NavBar Toggle
 
 navToggle.addEventListener('click', () => {
+  closeCart();
   navLeft.classList.add('showNav');
   addOverlay();
 })
@@ -43,7 +45,12 @@ navClose.addEventListener('click', () => {
 
 cartToggle.addEventListener('click', () => {
   cartContent.classList.toggle('show-cart-content');
+});
+
+bodyCartToggle.addEventListener('click', ()=> {
+  closeCart();
 })
+
 
 // lightbox toggle
 
@@ -215,9 +222,13 @@ addCartBtn.addEventListener('click', () => {
 })
 
 
-
-
 // Main Functions
+
+function closeCart(){
+  if(cartContent.classList.contains('show-cart-content')){
+    cartContent.classList.remove('show-cart-content');
+  }
+}
 
 function deleteCart() {
   let delBtn = parentElement.querySelector('.cart-delete-btn');
